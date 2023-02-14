@@ -1,3 +1,20 @@
+// ***********************************************************************************************
+  
+ // File Name 	:   08_mpi.c
+ // Purpose 	  :  parallel programing
+ // Author	    :   Deepsphere.ai
+ // Reviewer 	  :   Jothi Periasamy
+ // Date        :   08/02/2023 
+ // Version	    :   1.0	
+  
+// ***********************************************************************************************
+
+// Program Description : The objective of program is basic broadcast operation in mpi
+
+// Python Development Environment & Runtime - Trubo c, shell, codeblocks
+
+// ***********************************************************************************************
+
 #include <mpi.h>
 #include <stdio.h>
 
