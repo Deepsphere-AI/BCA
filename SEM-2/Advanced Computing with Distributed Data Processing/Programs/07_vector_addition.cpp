@@ -1,3 +1,22 @@
+// ***********************************************************************************************
+  
+ // File Name 	:   07_vector_addition.cpp
+ // Purpose 	  :  vector addtion using openmp
+ // Author	    :   Deepsphere.ai
+ // Reviewer 	  :   Jothi Periasamy
+ // Date        :   08/02/2023 
+ // Version	    :   1.0	
+  
+// ***********************************************************************************************
+
+// Program Description : The objective of program is Adding two vectors in parallelization using Openmp
+
+// Python Development Environment & Runtime - Trubo c++, shell, codeblocks
+
+// ***********************************************************************************************
+
+
+
 #include <iostream>
 #include <omp.h>
 #define VECTOR_SIZE 10
