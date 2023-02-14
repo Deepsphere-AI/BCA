@@ -15,15 +15,16 @@
 
 // ***********************************************************************************************
 
+// include libraries
 #include <mpi.h>
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
   int rank, size, data, i;
 
-  MPI_Init(&argc, &argv);
-  MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-  MPI_Comm_size(MPI_COMM_WORLD, &size);
+  MPI_Init(&argc, &argv);  // initialization of MPI
+  MPI_Comm_rank(MPI_COMM_WORLD, &rank);   // Retrieve the rank of the process
+  MPI_Comm_size(MPI_COMM_WORLD, &size);   // Retrieve the size of the MPI world
 
   if (rank == 0) {
     data = 42;
@@ -33,6 +34,6 @@ int main(int argc, char *argv[]) {
 
   printf("Process %d received data %d\n", rank, data);
 
-  MPI_Finalize();
+  MPI_Finalize();   // close the MPI library
   return 0;
 }
